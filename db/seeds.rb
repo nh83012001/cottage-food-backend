@@ -41,11 +41,13 @@ carolyn.baked_recipes << chickparm
 nick.baked_recipes << chickparm
 nick.baked_recipes << chickparm
 
-dinner1 = Transaction.create(purchaser_id: 1, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, delivery_date: 12/31/2017, delivery_time: 8:00 PM, total_cost: 90)
+
+
+dinner1 = Transaction.create(purchaser_id: 1, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, total_cost: 90)
 dinner2 = Transaction.create(purchaser_id: 2, baker_id: 1, delivery_distance: 8.0, purchaser_longitude: 40.734829, purchaser_latitude: -73.999454, delivery_date: 12/31/2017, delivery_time: 8:00 AM, total_cost: 50)
 dinner3 = Transaction.create(purchaser_id: 5, baker_id: 7, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, delivery_date: 12/20/2017, delivery_time: 11:00 PM, total_cost: 80)
 
-meal_part1 =
+carolyn.baker_transactions << dinner1
 
 nick.baked_recipes.recipes << lasagna
 nick.baked_recipes.recipes << chickparm
