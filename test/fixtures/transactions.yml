@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purchaser_id: 1
+  baker_id: 1
+  delivery_distance: 9.99
+  purchaser_longitude: 9.99
+  purchaser_latitude: 9.99
+  delivery_date: 2017-12-12
+  delivery_time: 2017-12-12 18:09:47
+  total_cost: 9.99
+
+two:
+  purchaser_id: 1
+  baker_id: 1
+  delivery_distance: 9.99
+  purchaser_longitude: 9.99
+  purchaser_latitude: 9.99
+  delivery_date: 2017-12-12
+  delivery_time: 2017-12-12 18:09:47
+  total_cost: 9.99
