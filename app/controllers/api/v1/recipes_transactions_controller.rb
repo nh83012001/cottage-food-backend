@@ -1,2 +1,3 @@
 class RecipesTransactionsController < ApplicationController
+
 end

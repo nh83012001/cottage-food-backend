@@ -26,14 +26,14 @@ ActiveRecord::Schema.define(version: 20171213194518) do
 
   create_table "recipes_transactions", force: :cascade do |t|
     t.integer "recipe_id"
-    t.integer "transaction_id"
+    t.integer "transact_id"
     t.integer "rating"
     t.text "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "transactions", force: :cascade do |t|
+  create_table "transacts", force: :cascade do |t|
     t.integer "purchaser_id"
     t.integer "baker_id"
     t.decimal "delivery_distance"
