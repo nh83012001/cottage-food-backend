@@ -5,6 +5,7 @@ User.destroy_all
 nick = User.create(username: "nick", firstname: "nick", lastname: "hall", password: "nick", email: "nickhall122@gmail.com", address: "9 patchin pl", phone: "317-294-6338", city: "New York", state: "NY", longitude: 40.734829, latitude: -73.999454)
 carolyn = User.create(username: "carolyn", firstname: "carolyn", lastname: "hall", password: "carolyn", email: "carolyn@gmail.com", address: "9 patchin pl", phone: "317-436-1839", city: "New York", state: "NY", longitude: 40.734829, latitude: -73.999454)
 alex = User.create(username: "alex", firstname: "alex", lastname: "griff", password: "alex", email: "alex@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", longitude: 40.734829, latitude: -73.999454)
+meryl = User.create(username: "meryl", firstname: "meryl", lastname: "dakin", password: "meryl", email: "meryl@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", longitude: 40.734829, latitude: -73.999454)
 ariel = User.create(username: "ariel", firstname: "ariel", lastname: "herman", password: "ariel", email: "ariel@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Brooklyn", state: "NY", longitude: 40.710696, latitude:  -73.933155)
 ashlee = User.create(username: "ashlee", firstname: "ashlee", lastname: "crusco", password: "ashlee", email: "ashlee@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", longitude: 40.734829, latitude: -73.999454)
 dylan = User.create(username: "dylan", firstname: "dylan", lastname: "kershaw", password: "dylan", email: "dylan@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", longitude: 40.734829, latitude: -73.999454)
@@ -39,8 +40,6 @@ cheeseplate = Recipe.create(name: "Cheese Plate", course_type: "appetizer", pric
 carolyn.baked_recipes << lasagna
 carolyn.baked_recipes << chickparm
 nick.baked_recipes << chickparm
-nick.baked_recipes << chickparm
-
 
 
 dinner1 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, total_cost: 90)
@@ -55,10 +54,11 @@ dinner9 = Transact.create(purchaser_id: 5, baker_id: 11, delivery_distance: 5.0,
 dinner10 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner11 = Transact.create(purchaser_id: 3, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner12 = Transact.create(purchaser_id: 2, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
+dinner13 = Transact.create(purchaser_id: 2, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 
 
 
-# dinner1.<< lasagna
-# dinner1.recipes << chickparm
-# dinner2.recipes << chickparm
-# dinner2.recipes << cheeseplate
+dinner1.recipes << lasagna
+dinner1.recipes << chickparm
+dinner2.recipes << chickparm
+dinner2.recipes << cheeseplate

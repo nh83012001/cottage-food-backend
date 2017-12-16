@@ -1,2 +1,2 @@
-class UserRecipesController < ApplicationController
+class API::V1::UserRecipesController < ActionController::API
 end

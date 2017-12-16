@@ -1,3 +1,3 @@
-class RecipesTransactionsController < ApplicationController
+class API::V1::RecipesTransactionsController < ActionController::API
 
 end
