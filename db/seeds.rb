@@ -37,6 +37,7 @@ cannoli = Recipe.create(name: "Cannoli", course_type: "dessert", price: 2.5, des
 spinachdip = Recipe.create(name: "Spinach Dip", course_type: "appetizer", price: 5.0, description: "Mixture of spinach and creams. Great for dipping with crackers or pita chips.")
 cheeseplate = Recipe.create(name: "Cheese Plate", course_type: "appetizer", price: 4.0, description: "Mixture of cheeses that includes goat, brie, and cheddar.")
 
+
 carolyn.baked_recipes << lasagna
 carolyn.baked_recipes << chickparm
 nick.baked_recipes << chickparm

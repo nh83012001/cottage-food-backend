@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   include ActionController::HttpAuthentication::Token::ControllerMethods
-  before_action :authorized
+  # before_action :authorized
 
 def issue_token(payload)
   JWT.encode(payload, "supersecretcode")
@@ -31,11 +31,11 @@ def logged_in?
   # binding.pry
   !!current_user
 end
-
-def authorized
-  # binding.pry
-  render json: {message: "Not welcome" }, status: 401 unless logged_in?
-end
+# 
+# def authorized
+#   # binding.pry
+#   render json: {message: "Not welcome" }, status: 401 unless logged_in?
+# end
 
 
 end

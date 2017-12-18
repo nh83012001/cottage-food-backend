@@ -1,5 +1,5 @@
 class Api::V1::SessionsController < ApplicationController
-before_action :authorized, only: [:show]
+# before_action :authorized, only: [:show]
 
   def show
     # binding.pry
@@ -15,9 +15,9 @@ before_action :authorized, only: [:show]
       payload = {user_id: user.id}
       token = issue_token(payload)
 
-      render json: { jwt: token, yay: true }
+      render json: { jwt: token, yay: true, user: user }.to_json, status: 200
     else
-      render json: { error: "some bad stuff happened"}
+      render json: { error: "bad"}
     end
   end
 
