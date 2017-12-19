@@ -7,8 +7,11 @@ class Api::V1::UsersController < ActionController::API
 
   def show
     @user= User.find(params[:id])
-    debugger
-    render json: @user
+    render json: {user: @user, recipes: @user.baked_recipes, sold_recipes: @user.sold_recipes, purchaser_transactions: @user.purchaser_transactions, baker_transactions: @user.baker_transactions}
+    #user.baked_recipes =
+    #user.sold_recipes
+    #
+
   end
 
   def create
