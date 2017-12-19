@@ -7,8 +7,9 @@ def issue_token(payload)
 end
 
 def current_user
-  authenticate_or_request_with_http_token do |jwt_token, options|
     begin
+
+      jwt_token = params[:token]
       decoded_token = JWT.decode(jwt_token, "supersecretcode")
     rescue JWT::DecodeError
       return nil
@@ -17,7 +18,6 @@ def current_user
       @current_user ||= User.find(decoded_token[0]["user_id"])
     else
     end
-  end
 end
 
 def logged_in?
