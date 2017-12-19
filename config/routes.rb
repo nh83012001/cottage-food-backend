@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       resources :user_recipes, only: [:index, :create, :destroy, :update]
 
       post "/auth", to: "sessions#create"
-      get "/current_user", to: "sessions#show"
+      post "/current_user", to: "sessions#show"
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
