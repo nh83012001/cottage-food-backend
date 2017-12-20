@@ -41,6 +41,9 @@ cheeseplate = Recipe.create(name: "Cheese Plate", course_type: "appetizer", pric
 carolyn.baked_recipes << lasagna
 carolyn.baked_recipes << chickparm
 nick.baked_recipes << chickparm
+nick.baked_recipes << baklava
+nick.baked_recipes << cannoli
+nick.baked_recipes << cheeseplate
 
 
 dinner1 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, total_cost: 90)
@@ -49,17 +52,21 @@ dinner3 = Transact.create(purchaser_id: 22, baker_id: 1, delivery_distance: 5.0,
 dinner4 = Transact.create(purchaser_id: 2, baker_id: 8, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner5 = Transact.create(purchaser_id: 11, baker_id: 7, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner6 = Transact.create(purchaser_id: 9, baker_id: 6, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner7 = Transact.create(purchaser_id: 7, baker_id: 5, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner8 = Transact.create(purchaser_id: 6, baker_id: 4, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
+dinner7 = Transact.create(purchaser_id: 7, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
+dinner8 = Transact.create(purchaser_id: 1, baker_id: 4, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner9 = Transact.create(purchaser_id: 5, baker_id: 11, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner10 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 dinner11 = Transact.create(purchaser_id: 3, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner12 = Transact.create(purchaser_id: 2, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner13 = Transact.create(purchaser_id: 2, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
+dinner12 = Transact.create(purchaser_id: 1, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
+dinner13 = Transact.create(purchaser_id: 2, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
 
 
 
 dinner1.recipes << lasagna
 dinner1.recipes << chickparm
+dinner1.recipes << cannoli
+
+
 dinner2.recipes << chickparm
 dinner2.recipes << cheeseplate
+dinner2.recipes << spinachdip

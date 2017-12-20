@@ -7,10 +7,7 @@ class Api::V1::UsersController < ActionController::API
 
   def show
     @user= User.find(params[:id])
-    render json: {user: @user, recipes: @user.baked_recipes, sold_recipes: @user.sold_recipes, purchaser_transactions: @user.purchaser_transactions, baker_transactions: @user.baker_transactions}
-    #user.baked_recipes =
-    #user.sold_recipes
-    #
+    render json: {current_user: @user, recipes: @user.baked_recipes, sold_recipes: @user.sold_recipes, purchaser_transactions: @user.purchaser_transactions, baker_transactions: @user.baker_transactions, purchased_recipes: @user.purchased_recipes}
 
   end
 
@@ -25,7 +22,7 @@ class Api::V1::UsersController < ActionController::API
     @longitude = response.parsed_response['results'][0]['geometry']['location']['lng']
     @user = User.create(username: params[:username], password: params[:password], email: params[:email],firstname: params[:firstname], lastname: params[:lastname], zip: params[:zip], address: params[:address], phone: params[:phone], city: params[:city], state: params[:state], latitude: @latitude, longitude: @longitude )
     render json: @user.to_json
-    debugger
+    # debugger
   end
 
   def update

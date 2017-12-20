@@ -3,10 +3,8 @@ class Api::V1::SessionsController < ApplicationController
 
   def show
     #if #saying if this current_user exists, send me back user data
-
-    render json: {
-      current_user: current_user
-    }
+    
+    render json: current_user.id
 
   end
 

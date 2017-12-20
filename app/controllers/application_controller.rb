@@ -15,6 +15,7 @@ def current_user
       return nil
     end
     if decoded_token[0]["user_id"]
+
       @current_user ||= User.find(decoded_token[0]["user_id"])
     else
     end
