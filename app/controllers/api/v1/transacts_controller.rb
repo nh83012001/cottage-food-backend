@@ -1,4 +1,4 @@
-class API::V1::TransactsController < ActionController::API
+class Api::V1::TransactsController < ActionController::API
   def index
     @transacts = Transact.all
     render json: @transacts
@@ -7,7 +7,7 @@ class API::V1::TransactsController < ActionController::API
   def create
     @transact = Transact.new(transact_params)
     @transact.save
-
+    render json: @transact
   end
 
   def show
@@ -24,6 +24,6 @@ class API::V1::TransactsController < ActionController::API
   private
 
     def transact_params
-      params.require(:transact).permit(:purchaser_id, :baker_id, :delivery_distance, :purchaser_longitude, :purchaser_latitude, :total_cost)
+      params.require(:transact).permit(:purchaser_id, :baker_id, :delivery_distance, :purchaser_longitude, :purchaser_latitude, :total_cost, :delivery_date_time)
     end
 end
