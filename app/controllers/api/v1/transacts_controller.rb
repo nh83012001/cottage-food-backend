@@ -7,7 +7,7 @@ class Api::V1::TransactsController < ActionController::API
   def create
     @transact = Transact.new(transact_params)
     @transact.save
-    render json: @transact
+    render json: @transact.id
   end
 
   def show
