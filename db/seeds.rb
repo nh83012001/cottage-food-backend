@@ -13,17 +13,17 @@ gene = User.create(username: "gene", firstname: "gene", lastname: "yoo", passwor
 esmery = User.create(username: "esmery", firstname: "esmery", lastname: "corniel", password: "esmery", email: "esmery@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.81000, longitude: -73.999454)
 diego = User.create(username: "diego", firstname: "dorado-alvarado", lastname: "herman", password: "diego", email: "diego@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.714829, longitude: -73.999454)
 elbin = User.create(username: "elbin", firstname: "elbin", lastname: "keeppanasseril", password: "elbin", email: "elbin@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.735829, longitude: -73.999454)
-josh = User.create(username: "josh", firstname: "josh", lastname: "denenberg", password: "josh", email: "josh@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.735829, longitude: -73.999454)
-justin = User.create(username: "justin", firstname: "justin", lastname: "frawley", password: "justin", email: "justin@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.735899, longitude: -73.969354)
+josh = User.create(username: "josh", firstname: "josh", lastname: "denenberg", password: "josh", email: "josh@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.719921, longitude: -74.007352)
+justin = User.create(username: "justin", firstname: "justin", lastname: "frawley", password: "justin", email: "justin@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.755300, longitude: -73.943665)
 kyle = User.create(username: "kyle", firstname: "kyle", lastname: "andrews", password: "kyle", email: "kyle@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.738829, longitude: -73.929454)
 laura = User.create(username: "laura", firstname: "laura", lastname: "kim", password: "laura", email: "laura@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Brooklyn", state: "NY", latitude: 40.710696, longitude:  -73.933155)
-matt = User.create(username: "matt", firstname: "matt", lastname: "crowe", password: "matt", email: "matt@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.999454)
-nicholas = User.create(username: "nicholas", firstname: "nicholas", lastname: "paolino", password: "nicholas", email: "nicholas@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.969454)
-ramy = User.create(username: "ramy", firstname: "ramy", lastname: "khorshed", password: "ramy", email: "ramy@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.995454)
-rebecca = User.create(username: "rebecca", firstname: "rebecca", lastname: "herman", password: "rebecca", email: "rebecca@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.996454)
-robert = User.create(username: "robert", firstname: "robert", lastname: "peck", password: "robert", email: "robert@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.997454)
-tim = User.create(username: "tim", firstname: "tim", lastname: "eubank", password: "tim", email: "tim@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.998454)
-todd = User.create(username: "todd", firstname: "todd", lastname: "greenberg", password: "todd", email: "todd@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.999454)
+matt = User.create(username: "matt", firstname: "matt", lastname: "crowe", password: "matt", email: "matt@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.718620, longitude: -73.989327)
+nicholas = User.create(username: "nicholas", firstname: "nicholas", lastname: "paolino", password: "nicholas", email: "nicholas@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.751139, longitude: -73.947785)
+ramy = User.create(username: "ramy", firstname: "ramy", lastname: "khorshed", password: "ramy", email: "ramy@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.794829, longitude: -73.925454)
+rebecca = User.create(username: "rebecca", firstname: "rebecca", lastname: "herman", password: "rebecca", email: "rebecca@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.758161, longitude: -73.993275)
+robert = User.create(username: "robert", firstname: "robert", lastname: "peck", password: "robert", email: "robert@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.744829, longitude: -73.997454)
+tim = User.create(username: "tim", firstname: "tim", lastname: "eubank", password: "tim", email: "tim@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.988454)
+todd = User.create(username: "todd", firstname: "todd", lastname: "greenberg", password: "todd", email: "todd@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.744506, longitude: -73.980916)
 vijay = User.create(username: "vijay", firstname: "vijay", lastname: "raju", password: "vijay", email: "vijay@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Hempstead", state: "NY", latitude: 40.697943, longitude: -73.613355)
 rod = User.create(username: "rod", firstname: "rod", lastname: "hall", password: "rod", email: "rod@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Indianapolis", state: "IN", latitude: 39.825594, longitude: -86.158850)
 mary = User.create(username: "mary", firstname: "mary", lastname: "hall", password: "mary", email: "mary@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Indianapolis", state: "IN", latitude: 39.825594, longitude: -86.157850)
@@ -43,6 +43,9 @@ tortellini = Recipe.create(name: "Tortellini", course_type: "entree", price: 4.0
 
 carolyn.baked_recipes << lasagna
 carolyn.baked_recipes << chickparm
+carolyn.baked_recipes << meatballs
+carolyn.baked_recipes << spinachdip
+carolyn.baked_recipes << cheeseplate
 nick.baked_recipes << chickparm
 nick.baked_recipes << baklava
 nick.baked_recipes << cannoli
