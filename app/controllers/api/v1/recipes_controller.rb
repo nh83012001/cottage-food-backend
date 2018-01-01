@@ -6,7 +6,7 @@ class Api::V1::RecipesController < ActionController::API
 
   def create
 
-    @recipe = Recipe.new(name: params[:name], course_type: params[:course_type], price: params[:price], description: params[:description])
+    @recipe = Recipe.new(name: params[:name], course_type: params[:course_type], price: params[:price], description: params[:description], image: params[:image])
 
     @recipe.save
     # @user = User.find(params[:id])
@@ -27,7 +27,7 @@ class Api::V1::RecipesController < ActionController::API
   private
 
 		def recipe_params
-			params.require(:recipe).permit(:name, :course_type, :price, :description)
+			params.require(:recipe).permit(:name, :course_type, :price, :description, :image)
 		end
 
 end
