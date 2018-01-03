@@ -11,14 +11,19 @@ class Api::V1::TransactsController < ActionController::API
   end
 
   def show
-    @transact = Transact.find(params[:user_id])
+    @transact = Transact.find(params[:id])
     render json: @transact
   end
 
   def update
     @transact = Transact.find(params[:id])
-    @transact.update(transact_params)
 
+    @transact.update(transact_params)
+  end
+
+  def destroy
+    @transact = Transact.find(params[:id])
+    @transact.destroy
   end
 
   private

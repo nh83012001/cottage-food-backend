@@ -5,12 +5,10 @@ class Api::V1::RecipesController < ActionController::API
   end
 
   def create
-
-    @recipe = Recipe.new(name: params[:name], course_type: params[:course_type], price: params[:price], description: params[:description], image: params[:image])
-
+    @recipe = Recipe.new(name: params[:body][:name], course_type: params[:body][:course_type], price: params[:body][:price], description: params[:body][:description], image: params[:body][:image])
     @recipe.save
-    # @user = User.find(params[:id])
-    # @user << @recipe
+    @user = User.find(params[:user_id])
+    @user.baked_recipes << @recipe
     render json: @recipe.to_json
   end
 

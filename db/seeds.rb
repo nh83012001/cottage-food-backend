@@ -121,19 +121,19 @@ andrew.baked_recipes << cheeseplate
 andrew.baked_recipes << lasagna
 
 
-dinner1 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, total_cost: 90)
-dinner2 = Transact.create(purchaser_id: 2, baker_id: 1, delivery_distance: 8.0, purchaser_longitude: 40.734829, purchaser_latitude: -73.999454,total_cost: 50)
-dinner3 = Transact.create(purchaser_id: 22, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner4 = Transact.create(purchaser_id: 2, baker_id: 8, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner5 = Transact.create(purchaser_id: 11, baker_id: 7, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner6 = Transact.create(purchaser_id: 9, baker_id: 6, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner7 = Transact.create(purchaser_id: 7, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner8 = Transact.create(purchaser_id: 1, baker_id: 4, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner9 = Transact.create(purchaser_id: 5, baker_id: 11, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner10 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner11 = Transact.create(purchaser_id: 3, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner12 = Transact.create(purchaser_id: 1, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
-dinner13 = Transact.create(purchaser_id: 2, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80)
+dinner1 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, total_cost: 90, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner2 = Transact.create(purchaser_id: 2, baker_id: 1, delivery_distance: 8.0, purchaser_longitude: 40.734829, purchaser_latitude: -73.999454,total_cost: 50, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner3 = Transact.create(purchaser_id: 22, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80, delivery_date_time: "2018-01-11T01:15:00.000Z")
+dinner4 = Transact.create(purchaser_id: 2, baker_id: 8, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 55.5, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner5 = Transact.create(purchaser_id: 11, baker_id: 7, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner6 = Transact.create(purchaser_id: 9, baker_id: 6, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 88, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner7 = Transact.create(purchaser_id: 7, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 52, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner8 = Transact.create(purchaser_id: 1, baker_id: 4, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 108, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner9 = Transact.create(purchaser_id: 5, baker_id: 11, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 200, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner10 = Transact.create(purchaser_id: 1, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 220.5, delivery_date_time: "2018-02-01T01:30:00.000Z")
+dinner11 = Transact.create(purchaser_id: 3, baker_id: 2, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 80, delivery_date_time: "2018-01-11T01:15:00.000Z")#8:15PM on January 10th 2018
+dinner12 = Transact.create(purchaser_id: 1, baker_id: 18, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 62.5, delivery_date_time: "2018-02-01T01:30:00.000Z")#8:30PM on January 31st 2018
+dinner13 = Transact.create(purchaser_id: 2, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 52.5, delivery_date_time: "2018-01-12T00:45:00.000Z")#7:45 on January 11th 2018
 
 
 
