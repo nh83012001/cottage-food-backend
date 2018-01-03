@@ -3,7 +3,7 @@ Recipe.destroy_all
 User.destroy_all
 
 nick = User.create(username: "nick", firstname: "nick", lastname: "hall", password: "nick", email: "nickhall122@gmail.com", address: "1234 Abc Street", phone: "317-294-6339", city: "New York", state: "NY", latitude: 40.748541, longitude: -73.985763)
-carolyn = User.create(username: "carolyn", firstname: "carolyn", lastname: "hall", password: "carolyn", email: "carolyn@gmail.com", address: "1234 Abc Street", phone: "317-436-1839", city: "New York", state: "NY", latitude: 40.734229, longitude: -73.999454)
+carolyn = User.create(username: "carolyn", firstname: "carolyn", lastname: "commons", password: "carolyn", email: "carolyn@gmail.com", address: "1234 Abc Street", phone: "317-436-1839", city: "New York", state: "NY", latitude: 40.734229, longitude: -73.999454)
 alex = User.create(username: "alex", firstname: "alex", lastname: "griff", password: "alex", email: "alex@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.999454)
 meryl = User.create(username: "meryl", firstname: "meryl", lastname: "dakin", password: "meryl", email: "meryl@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "New York", state: "NY", latitude: 40.734829, longitude: -73.999454)
 ariel = User.create(username: "ariel", firstname: "ariel", lastname: "herman", password: "ariel", email: "ariel@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Brooklyn", state: "NY", latitude: 40.710696, longitude:  -73.933155)
