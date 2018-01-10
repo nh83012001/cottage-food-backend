@@ -26,15 +26,15 @@ mary = User.create(username: "mary", firstname: "Mary", lastname: "Hall", passwo
 kelly = User.create(username: "kelly", firstname: "Kelly", lastname: "Hall", password: "kelly", email: "kelly@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Seattle", state: "WA", latitude: 47.605999, longitude: -122.311172)
 andrew = User.create(username: "andrew", firstname: "Andrew", lastname: "Cronholm", password: "andrew", email: "andrew@gmail.com", address: "1234 Abc Street", phone: "123-456-7890", city: "Seattle", state: "WA", latitude: 47.604999, longitude: -122.311972)
 
-lasagna = Recipe.create(name: "Lasagna", course_type: "entree", price: 7.5, description: "Delicious pasta noodles with spinach, cheese, and marinara sauce.")
-chickparm = Recipe.create(name: "Chicken Parmesan", course_type: "entree", price: 7.5, description: "Baked chicken with marinara sauce.")
-baklava = Recipe.create(name: "Baklava", course_type: "dessert", price: 4.0, description: "Traditional middle eastern dessert pastry with pine nuts and honey.")
-cannoli = Recipe.create(name: "Cannoli", course_type: "dessert", price: 2.5, description: "Italian dessert with hard outer shell and delicious cream in the middle.")
-spinachdip = Recipe.create(name: "Spinach Dip", course_type: "appetizer", price: 5.0, description: "Mixture of spinach and creams. Great for dipping with crackers or pita chips.")
-cheeseplate = Recipe.create(name: "Cheese Plate", course_type: "appetizer", price: 4.0, description: "Mixture of cheeses that includes goat, brie, and cheddar.")
-meatballs = Recipe.create(name: "Meatballs", course_type: "appetizer", price: 4.0, description: "Mini meatballs with toothpics and slow cooker provided. Minimum 5 servings required.")
-ravioli = Recipe.create(name: "Goat Cheese Ravioli", course_type: "entree", price: 6.0, description: "Delicious goat cheese stuffed ravioli with a light vodka sauce.")
-tortellini = Recipe.create(name: "Tortellini", course_type: "entree", price: 4.0, description: "Mixture of cheeses that includes goat, brie, and cheddar.")
+lasagna = Recipe.create(name: "Lasagna", course_type: "entree", price: 7.75, description: "Delicious pasta noodles with spinach, cheese, and marinara sauce.")
+chickparm = Recipe.create(name: "Chicken Parmesan", course_type: "entree", price: 7.55, description: "Baked chicken with marinara sauce.")
+baklava = Recipe.create(name: "Baklava", course_type: "dessert", price: 4.25, description: "Traditional middle eastern dessert pastry with pine nuts and honey.")
+cannoli = Recipe.create(name: "Cannoli", course_type: "dessert", price: 2.25, description: "Italian dessert with hard outer shell and delicious cream in the middle.")
+spinachdip = Recipe.create(name: "Spinach Dip", course_type: "appetizer", price: 5.99, description: "Mixture of spinach and creams. Great for dipping with crackers or pita chips.")
+cheeseplate = Recipe.create(name: "Cheese Plate", course_type: "appetizer", price: 4.44, description: "Mixture of cheeses that includes goat, brie, and cheddar.")
+meatballs = Recipe.create(name: "Meatballs", course_type: "appetizer", price: 4.15, description: "Mini meatballs with toothpics and slow cooker provided. Minimum 5 servings required.")
+ravioli = Recipe.create(name: "Goat Cheese Ravioli", course_type: "entree", price: 6.75, description: "Delicious goat cheese stuffed ravioli with a light vodka sauce.")
+tortellini = Recipe.create(name: "Tortellini", course_type: "entree", price: 4.95, description: "Mixture of cheeses that includes goat, brie, and cheddar.")
 
 
 carolyn.baked_recipes << lasagna
@@ -46,6 +46,10 @@ nick.baked_recipes << chickparm
 nick.baked_recipes << baklava
 nick.baked_recipes << cannoli
 nick.baked_recipes << cheeseplate
+nick.baked_recipes << cheeseplate
+nick.baked_recipes << spinachdip
+nick.baked_recipes << meatballs
+
 alex.baked_recipes << chickparm
 alex.baked_recipes << lasagna
 alex.baked_recipes << cheeseplate
@@ -124,7 +128,12 @@ dinner4 = Transact.create(purchaser_id: 5, baker_id: 1, delivery_distance: 8.0, 
 dinner5 = Transact.create(purchaser_id: 3, baker_id: 2, delivery_distance: 8.0, purchaser_longitude: 39.825594, purchaser_latitude: -86.158850, total_cost: 190.50, delivery_date_time: "2018-01-12T00:45:00.000Z", baker_name: 'Carolyn', purchaser_name: 'Alex')
 dinner6 = Transact.create(purchaser_id: 2, baker_id: 4, delivery_distance: 8.0, purchaser_longitude: 40.734829, purchaser_latitude: -73.999454,total_cost: 20.25, delivery_date_time: "2018-02-01T01:30:00.000Z", baker_name: 'Meryl', purchaser_name:'Carolyn')
 dinner7 = Transact.create(purchaser_id: 4, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 30.75, delivery_date_time: "2018-02-01T01:30:00.000Z", baker_name: 'Nick', purchaser_name:'Meryl')
-dinner8 = Transact.create(purchaser_id: 1, baker_id: 5, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 45.5, delivery_date_time: "2018-01-11T01:15:00.000Z", baker_name: 'Ariel', purchaser_name: 'Nick')
+dinner8 = Transact.create(purchaser_id: 1, baker_id: 6, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 45.5, delivery_date_time: "2018-01-11T01:15:00.000Z", baker_name: 'Ashlee', purchaser_name: 'Nick')
+dinner9 = Transact.create(purchaser_id: 1, baker_id: 7, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-02-01T01:30:00.000Z", baker_name: 'Dylan', purchaser_name: 'Nick')
+dinner10 = Transact.create(purchaser_id: 1, baker_id: 8, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-02-01T01:30:00.000Z", baker_name: 'Gene', purchaser_name: 'Nick')
+dinner11 = Transact.create(purchaser_id: 8, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-02-01T01:30:00.000Z", baker_name: 'Nick', purchaser_name: 'Gene')
+dinner12 = Transact.create(purchaser_id: 6, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-01-12T00:45:00.000Z", baker_name: 'Nick', purchaser_name: 'Ashlee')
+dinner13 = Transact.create(purchaser_id: 7, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-02-01T01:30:00.000Z", baker_name: 'Nick', purchaser_name: 'Dylan')
 # dinner5 = Transact.create(purchaser_id: 11, baker_id: 7, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 92, delivery_date_time: "2018-02-01T01:30:00.000Z")
 # dinner6 = Transact.create(purchaser_id: 9, baker_id: 6, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 88, delivery_date_time: "2018-02-01T01:30:00.000Z")
 # dinner7 = Transact.create(purchaser_id: 7, baker_id: 1, delivery_distance: 5.0, purchaser_longitude: 30.734829, purchaser_latitude: -77.999454, total_cost: 52, delivery_date_time: "2018-02-01T01:30:00.000Z")
