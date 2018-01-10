@@ -12,7 +12,7 @@ Git clone git@github.com:nh83012001/cottage-food-backend.git
 
 ### Installing
 
-Once you have gone into the folder for Midpoint, the following will download the necessary files for our app to run.
+Once you have gone into the folder for Cottage, the following will download the necessary files for our app to run.
 
 ```
 Type "bundle" into terminal to download dependencies
